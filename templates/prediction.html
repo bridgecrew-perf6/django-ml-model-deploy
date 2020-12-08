@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prediction</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 28%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  
+}
+input[type=gmail]{
+ width: 30%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+margin-bottom:10px;
+
+}
+ input[type=number]{
+ width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+.container {input
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<center>
+<body style="background-color: rgb(16, 24, 54);">
+
+<h3 style="color: white;">Predicted Gross of Movies....</h3>
+
+<div  style="background-color: orange; width: 700px;" class="container">
+  <form method="GET" action="result">
+    <label for="fname">Duration</label><br>
+    <input type="text" id="fname" name="duration" placeholder="Duration in Minute.."><br>
+
+    <label for="lname">Budget</label><br>
+    <input type="text" id="lname" name="budget" placeholder="Budget of Movie..">
+        <br>
+    <label for="mnumber">IMDb Ratings</label><br>
+     <input type="text" id="mnumber" name="imdb" placeholder="  Enter value...">
+    <br>
+
+        <label for ="mail">Facebook Likes</label><br>
+        <input type="number" id="mail" name="likes" placeholder=" Number of Likes">
+<br>
+
+    <input type="submit" value="Submit">
+    <input type="button" value="Go back!" onclick="history.go(-2)" >   
+  </form>
+
+
+  <h1 style="color: white; font-size: 25px;">Predicted Gross : {{result}}</h1>
+</div>
+
+</body>
+</center>
+</html>
