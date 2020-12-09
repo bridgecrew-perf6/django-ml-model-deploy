@@ -26,7 +26,7 @@ SECRET_KEY = 'k1c0@81i2h$pevj!n+%*l!99ay8#u*778htg9&h*^3g%@yj7ap'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','bidaproject.herokuapp.com']
 
 
 # Application definition
